@@ -14,7 +14,7 @@ You have to rotate the image in-place, which means you have to modify the input 
 **Input:** matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]<br>
 **Output:** [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
 
-<pre>
+```java
 static class Solution {
     public void rotate(int[][] matrix) {
         int n = matrix.length;
@@ -34,7 +34,7 @@ static class Solution {
         }
     }
 }
-</pre>
+```
 
 #
 
@@ -54,7 +54,7 @@ Given an array of intervals where intervals[i] = [starti, endi], merge all overl
 **Output:** [[1,5]]<br>
 **Explanation:** Intervals [1,4] and [4,5] are considered overlapping.
 
-<pre>
+```java
 class Solution {
     public int[][] merge(int[][] intervals) {
         if(intervals.length <= 1){
@@ -104,7 +104,7 @@ class Solution {
         arr[y] = temp;
     }
 }
-</pre>
+```
 
 #
 
@@ -138,7 +138,7 @@ The result of the merge is [1].<br>
 The result of the merge is [1].<br>
 Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
 
-<pre>
+```java
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m-1, j = n-1, t = m+n-1;
@@ -152,7 +152,7 @@ class Solution {
         }
     }
 }
-</pre>
+```
 
 #
 # 4.Find the Duplicate Number
@@ -176,7 +176,7 @@ You must solve the problem without modifying the array nums and uses only consta
 **Input:** nums = [3,3,3,3,3]<br>
 **Output:** 3
 
-<pre>
+```java
 static class Solution {
     public int findDuplicate(int[] nums) {
         int slow = nums[0], fast = nums[0];
@@ -192,7 +192,7 @@ static class Solution {
         return fast;
     }
 }
-</pre>
+```
 
 
 #
@@ -214,7 +214,7 @@ Since 3 is appearing twice and 4 is missing
 **Explanation:** A = 5 , B = 8 <br>
 Since 5 is appearing twice and 8 is missing
 
-<pre>
+```java
 
 public class Solution {
     public static int[] missingAndRepeating(ArrayList<Integer> arr, int N) {
@@ -236,7 +236,7 @@ public class Solution {
         return ans;
     }
 }
-</pre>
+```
 
 #
 
@@ -266,7 +266,7 @@ Examples
 **Result:** 7<br>
 **Explanation:** There are 7 pairs (5,1), (5,3), (5,2), (5,4),(3,2), (3,1), (2,1) and we have left 2 pairs (2,4) and (1,4) as both are not satisfy our condition.
 
-<pre>
+```java
 static class Solution {
     public static long getInversions(long arr[], int n) {
         // Write your code here.
@@ -325,4 +325,4 @@ static class Solution {
         return count;
     }
 }
-</pre>
+```

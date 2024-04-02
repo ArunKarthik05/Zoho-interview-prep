@@ -1,4 +1,4 @@
-<pre>
+```java
 public class Demo {
 
     void quickSort(int [] arr, int low, int high){
@@ -67,7 +67,7 @@ public class Demo {
 
     }
 }
-</pre>
+```
 
 # 1.Set Matrix Zeroes
 
@@ -85,7 +85,7 @@ You must do it in place.
 **Input:** matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]<br>
 **Output:** [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
-<pre>
+```java
 static class Solution{
     public void setZeroes(int [][] matrix){
         int m = matrix.length;
@@ -132,7 +132,7 @@ static class Solution{
         }
     }
 }
-</pre>
+```
 #
 # 2.Pascal's Triangle
 
@@ -150,7 +150,7 @@ In Pascal's triangle, each number is the sum of the two numbers directly above i
 **Input:** numRows = 1<br>
 **Output:** [[1]]
 
-<pre>
+```java
 static class Solution {
     public List<List<Integer>> generate(int n) {
         List<List<Integer>> arr = new ArrayList<>();
@@ -171,7 +171,7 @@ static class Solution {
         return arr;
     }
 }
-</pre>
+```
 
 #
 # 3.Next Permutation
@@ -202,7 +202,7 @@ The replacement must be in place and use only constant extra memory.
 
 **Input:** nums = [1,1,5]<br>
 **Output:** [1,5,1]
-<pre>
+```java
 static class Solution {
     public void nextPermutation(int[] nums) {
         int index = -1, n = nums.length;
@@ -233,7 +233,7 @@ static class Solution {
         }
     }
 }
-</pre>
+```
 
 #
 # 4.Maximum Subarray
@@ -257,7 +257,7 @@ subarray with the largest sum, and return its sum.
 **Output:** 23<br>
 **Explanation:** The subarray [5,4,-1,7,8] has the largest sum 23.
 
-<pre>
+```java
 static class Solution {
     public int maxSubArray(int[] nums) {
         int maxSum = Integer.MIN_VALUE + 1;
@@ -272,7 +272,7 @@ static class Solution {
         return maxSum;
     }
 }
-</pre>
+```
 #
 # 5.Sort Colors
 
@@ -291,7 +291,7 @@ You must solve this problem without using the library's sort function.
 
 **Input:** nums = [2,0,1]<br>
 **Output:** [0,1,2]
-<pre>
+```java
 static class Solution {
     public void sortColors(int[] nums) {
         int start= 0, last = nums.length-1;
@@ -309,7 +309,7 @@ static class Solution {
         }
     }
 }
-</pre>
+```
 #
 # 6.Best Time to Buy and Sell Stock
 
@@ -332,7 +332,7 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 **Output:** 0 <br>
 **Explanation:** In this case, no transactions are done and the max profit = 0.
 
-<pre>
+```java
 class Solution {
     public int maxProfit(int[] prices) {
         int maxProfit = Integer.MIN_VALUE + 1;
@@ -344,4 +344,4 @@ class Solution {
         return maxProfit;
     }
 }
-</pre>
+```

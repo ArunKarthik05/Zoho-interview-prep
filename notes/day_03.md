@@ -19,7 +19,7 @@ You must write a solution in O(log(m * n)) time complexity.
 **Input:** matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13<br>
 **Output:** false
 
-<pre>
+```java
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         int m = matrix.length, n = matrix[0].length;
@@ -34,7 +34,7 @@ class Solution {
         return false;
     }
 }
-</pre>
+```
 
 #
 # 2.Pow(x, n)
@@ -54,7 +54,7 @@ Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
 **Output:** 0.25000<br>
 **Explanation:** 2-2 = 1/22 = 1/4 = 0.25
 
-<pre>
+```java
 class Solution {
     public double myPow(double x, int n) {
         double ans = 1;
@@ -78,7 +78,7 @@ class Solution {
         return ans;
     }
 }
-</pre>
+```
 
 #
 # 3.Majority Element
@@ -95,7 +95,7 @@ Example 2:<br>
 **Input:** nums = [2,2,1,1,1,2,2]<br>
 **Output:** 2
 
-<pre>
+```java
 class Solution {
     public int majorityElement(int[] nums) {
         int ans = nums[0], count = 0;
@@ -107,7 +107,7 @@ class Solution {
         return ans;
     }
 }
-</pre>
+```
 
 #
 # 4.Majority Element II
@@ -128,7 +128,7 @@ Given an integer array of size n, find all elements that appear more than ⌊ n/
 **Input:** nums = [1,2]<br>
 **Output:** [1,2]
 
-<pre>
+```java
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
         int cnt1 = 0, cnt2 = 0, n = nums.length;
@@ -172,7 +172,7 @@ class Solution {
         return ans;
     }
 }
-</pre>
+```
 
 #
 # 5.Unique Paths
@@ -195,7 +195,7 @@ The test cases are generated so that the answer will be less than or equal to 2 
 2. Down -> Down -> Right
 3. Down -> Right -> Down
 
-<pre>
+```java
 class Solution {
 
     public int paths(int m, int n, int i, int j, int[][]dp){
@@ -225,7 +225,7 @@ class Solution {
         return dp[0][0];
     }
 }
-</pre>
+```
 
 #
 # 6.Reverse Pairs
@@ -257,7 +257,7 @@ nums[i] > 2 * nums[j].
 - (2, 4) --> nums[2] = 3, nums[4] = 1, 3 > 2 * 1
 - (3, 4) --> nums[3] = 5, nums[4] = 1, 5 > 2 * 1
 
-<pre>
+```java
 class Solution {
     int count  = 0;
 
@@ -319,4 +319,4 @@ class Solution {
         return count;
     }
 }   
-</pre>
+```

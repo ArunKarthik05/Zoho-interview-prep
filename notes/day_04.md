@@ -17,7 +17,7 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 **Input:** head = []<br>
 **Output:** []
 
-<pre>
+```java
 class Solution {
     public ListNode reverseList(ListNode head) {
         if(head == null || head.next == null) return head;
@@ -33,7 +33,7 @@ class Solution {
         return prev;
     }
 }
-</pre>
+```
 
 
 # 
@@ -54,7 +54,7 @@ If there are two middle nodes, return the second middle node.
 **Explanation:** Since the list has two middle nodes with values 3 and 4, we return the second one.<br>
  
 
-<pre>
+```java
 class Solution {
     public ListNode middleNode(ListNode head) {
         if(head.next == null) return head;
@@ -69,7 +69,7 @@ class Solution {
         return slow;
     }
 }
-</pre>
+```
 
 #
 # 3.Merge Two Sorted Lists
@@ -92,7 +92,7 @@ Return the head of the merged linked list.
 **Input:** list1 = [], list2 = [0]<br>
 **Output:** [0]<br>
 
-<pre>
+```java
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if(list1 == null)
@@ -119,7 +119,7 @@ class Solution {
         return head;
     }
 }
-</pre>
+```
 
 #
 # 4. Remove Nth Node From End of List
@@ -138,7 +138,7 @@ Given the head of a linked list, remove the nth node from the end of the list an
 **Input:** head = [1,2], n = 1<br>
 **Output:** [1]<br>
 
-<pre>
+```java
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         if(head == null) return head;
@@ -159,7 +159,7 @@ class Solution {
         return head;
     }
 }
-</pre>
+```
 
 #
 # 5.Add Two Numbers
@@ -181,7 +181,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 **Input:** l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]<br>
 **Output:** [8,9,9,9,0,0,0,1]<br>
 
-<pre>
+```java
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = new ListNode(0);
@@ -206,7 +206,7 @@ class Solution {
         return head.next;
     }
 }
-</pre>
+```
 
 #
 # 6.Delete Node in a Linked List
@@ -241,11 +241,11 @@ Delete the given node. Note that by deleting the node, we do not mean removing i
 **Output:** [4,5,9]<br>
 **Explanation:** You are given the third node with value 1, the linked list should become 4 -> 5 -> 9 after calling your function.
 
-<pre>
+```java
 class Solution {
     public void deleteNode(ListNode node) {
         node.val = node.next.val;
         node.next = node.next.next;
     }
 }
-</pre>
+```
