@@ -13,6 +13,7 @@ Name
 Age
 Gender
 Berth Preference
+
 The tickets should not be allocated for children below age 5.But, their details should be stored. Lower berth should be allocated for persons whose age is above 60 and ladies with children if available. Side-lower berths should be allocated for RAC passengers.
 
 Conditions for cancelling:
