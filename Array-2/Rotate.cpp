@@ -49,9 +49,9 @@ Tranpose the matrix-Interchange rows and cols
     4 5 6
     7 8 9
 <------------>
-    1 4 7 
+    1 4 7
     2 5 8
-    3 6 9
+    3 6 9 
 Now inter-change the cols
     7 4 1
     8 5 2

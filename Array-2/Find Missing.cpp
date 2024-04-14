@@ -9,6 +9,7 @@ class Solution{
         for( auto &el:array){
             count[el]++;
         }
+        
         for (int i = 1; i < 256; ++i) {
             if (count[i] > 1) {
                 std::cout << "Value " << i << " occurs " << count[i] << " times." << std::endl;
