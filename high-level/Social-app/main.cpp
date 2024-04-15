@@ -24,6 +24,7 @@ int main(){
     n.addProfile(p3);
     n.getAllProfiles();
     n.getProfile(32767);
+    n.getProfile(327672);
     
     cout<<endl;
     return 0;
