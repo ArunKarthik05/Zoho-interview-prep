@@ -13,7 +13,7 @@ class Profile{
     protected:
     string name;
     int id;
-    unordered_map<int,string> friendsList;
+    unordered_map<int,vector<Profile>> friendsList;
     
     public:
     Profile( string name,int id) : name(name),id(id){}
@@ -22,13 +22,17 @@ class Profile{
         string Details = "Name:"+name+",Id:"+to_string(id);
         return Details;
     }
+    
     void addFriend(Profile p){
-        friendsList[p.id] = p.name;
+        friendsList[p.id].push_back(p);
     }
 
     void getFriendsList(){
-        for( auto [id,name]:friendsList){
-            cout<<"\nFriendname("<<id<<"):"<<name;
+        cout<<"\n----------FRIENDSLIST OF "<<name<<"-----------";
+        for( auto [id,profiles]:friendsList){
+            for( auto p:profiles){
+                cout<<"\nName("<<p.id<<")"<<p.name;
+            }
         }
     }
     friend class Network;
