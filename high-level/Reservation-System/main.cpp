@@ -5,7 +5,7 @@
 int main() {
     int noOfComp =2;
     Train train(noOfComp);
-    for( int i=0;i<171;i++){
+    for( int i=0;i<25;i++){
         train.bookTicket("Alice", 25, FEMALE, "lower");
         // train.bookTicket("Bob", 30, MALE, "lower");
         // train.bookTicket("Charlie", 35, MALE, "lower");

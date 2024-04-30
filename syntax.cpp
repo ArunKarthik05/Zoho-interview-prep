@@ -5,4 +5,6 @@ public:
 };
 int main(){
     Solution obj;
+    cout<<endl;
+    return 0;
 }
