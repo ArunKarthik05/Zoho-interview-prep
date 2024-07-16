@@ -1,4 +1,6 @@
 A Distributed Denial of Service (DDoS) attack is a malicious attempt to disrupt the normal traffic of a targeted server, service, or network by overwhelming it with a flood of internet traffic. Here's how a DDoS attack is typically carried out and some strategies to prevent or mitigate its impact:
+![image](https://github.com/user-attachments/assets/86dcd1ba-1ea0-44c5-9044-9c2329c7d0d8)
+
 
 ### How a DDoS Attack is Done:
 
