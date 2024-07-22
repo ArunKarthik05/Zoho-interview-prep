@@ -1,5 +1,5 @@
 ### Offsets
-![image](https://workdrive.zohoexternal.com/external/229d74e3cb092a095ea068a73c49bd8f428df3296cc4ed1d20a5cb8dc51972a2)
+![image](https://github.com/user-attachments/assets/01786063-3f59-4689-b969-61f228841bee)
 
 **What It Is:**
 - **Offsets** are unique identifiers for messages within a partition in a messaging system like Apache Kafka.
