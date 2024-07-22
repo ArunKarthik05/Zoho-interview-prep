@@ -1,4 +1,6 @@
 ### Message Queue Architecture
+![image](https://github.com/user-attachments/assets/39f18b63-5e89-46fd-b595-cb674b9604e4)
+
 
 #### Producer-Consumer Model
 
@@ -12,19 +14,6 @@ The producer-consumer model is a fundamental pattern in distributed messaging sy
    - Consumers are applications or components that retrieve and process messages from the queue.
    - Consumers can work independently and concurrently, which allows for scalable processing.
 
-**Architecture Diagram:**
-
-+---------+ +---------+ +----------+ +---------+
-| Producer| ---> | Message | ---> | Message | ---> | Consumer|
-| | | Broker | | Queue | | |
-+---------+ +---------+ +----------+ +---------+
-
-
-In this diagram:
-- Producers send messages to the Message Broker.
-- The Message Broker manages the Message Queue.
-- Consumers retrieve and process messages from the Message Queue.
-
 #### Message Brokers
 
 Message brokers are intermediaries that facilitate communication between producers and consumers. They handle the storage, routing, and delivery of messages. Common message brokers include RabbitMQ, Apache Kafka, and AWS SQS.
@@ -35,25 +24,6 @@ Message brokers are intermediaries that facilitate communication between produce
 - **Load Balancing:** Distributes messages evenly across multiple consumers.
 - **Persistence:** Ensures messages are not lost in case of failures.
 - **Scalability:** Can handle a high volume of messages by distributing the load across multiple brokers or nodes.
-
-**Architecture Diagram:**
-
-+---------+ +----------+ +---------+
-| Producer| ---> | Message | ---> | Consumer|
-| | | Broker | | |
-+---------+ +----------+ +---------+
-^
-|
-+-----------+
-| Message |
-| Queue |
-+-----------+
-
-
-In this diagram:
-- The Message Broker contains the Message Queue.
-- Producers send messages to the Message Broker, which stores them in the queue.
-- Consumers retrieve messages from the queue through the Message Broker.
 
 #### Message Delivery Semantics
 
@@ -72,19 +42,6 @@ Message delivery semantics define how a message is delivered and acknowledged be
    - Suitable for applications where both message loss and duplicates are unacceptable.
    - This is the most complex and resource-intensive to implement.
 
-**Architecture Diagram:**
-
-+---------+ +----------+ +---------+
-| Producer| ---> | Message | ---> | Consumer|
-| | | Broker | | |
-+---------+ +----------+ +---------+
-(1) (2) (3)
-
-In this diagram:
-1. **At Most Once:** Producer sends a message and does not wait for an acknowledgment.
-2. **At Least Once:** Producer sends a message and retries if an acknowledgment is not received.
-3. **Exactly Once:** Producer sends a message, waits for an acknowledgment, and ensures that duplicate messages are not processed.
-
 #### Message Acknowledgement
 
 Message acknowledgment is the process by which a consumer notifies the broker that a message has been successfully processed. This ensures that messages are not lost or reprocessed unnecessarily.
@@ -94,25 +51,3 @@ Message acknowledgment is the process by which a consumer notifies the broker th
 - **Broker Actions:** 
   - If the acknowledgment is received, the broker removes the message from the queue.
   - If the acknowledgment is not received (due to a consumer failure), the broker can redeliver the message to another consumer.
-
-**Architecture Diagram:**
-
-+---------+ +----------+ +---------+
-| Producer| ---> | Message | ---> | Consumer|
-| | | Broker | | |
-+---------+ +----------+ +---------+
-^
-|
-+-----------+
-| Message |
-| Queue |
-+-----------+
-|
-v
-+------------------+
-| Acknowledgement |
-+------------------+
-
-**In this diagram:**
-- The Consumer processes a message and sends an acknowledgment back to the Message Broker.
-- The Message Broker removes the acknowledged message from the Message Queue.
