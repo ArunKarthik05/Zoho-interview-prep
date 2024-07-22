@@ -17,6 +17,7 @@
 - Imagine a ticket booking system where users (producers) send booking requests (messages) to a queue. Each request is then handled by a single server (consumer) that processes it and updates the booking status.
 
 **Architecture Diagram:**
+
 ![image](https://github.com/user-attachments/assets/2d00eaf0-af2d-4c69-9ff0-9cf4804d6ee1)
 
 ### Publish-Subscribe Messaging
