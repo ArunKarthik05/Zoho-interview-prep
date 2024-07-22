@@ -39,4 +39,4 @@
 - Imagine a news system where articles (messages) are published under different categories (topics) like sports, technology, and entertainment. Subscribers (consumers) interested in sports receive all sports-related articles.
 
 **Architecture Diagram:**
-![image](https://github.com/user-attachments/assets/9ddbc47b-a23c-42e4-bb38-c7be2b5280f5)
+![image](https://github.com/user-attachments/assets/eb5d7a8e-251d-4cc6-9ca1-83edc65177c5)
