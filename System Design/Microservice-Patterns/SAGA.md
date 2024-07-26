@@ -1,4 +1,4 @@
-The Saga pattern is a design pattern used to manage distributed transactions across multiple microservices. Unlike traditional transactions that use a two-phase commit, the Saga pattern breaks down a transaction into a series of smaller, independent transactions, each managed by a separate service. These transactions are coordinated to ensure data consistency and reliability across the distributed system.
+The Saga pattern(SEQUENCE OF EVENTS) is a design pattern used to manage distributed transactions across multiple microservices. Unlike traditional transactions that use a two-phase commit, the Saga pattern breaks down a transaction into a series of smaller, independent transactions, each managed by a separate service. These transactions are coordinated to ensure data consistency and reliability across the distributed system.
 
 ### Architecture of Saga Pattern
 
