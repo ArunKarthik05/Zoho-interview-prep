@@ -1,7 +1,7 @@
 ### CQRS (Command Query Responsibility Segregation) Architecture
 CQRS is an architectural pattern that separates the reading (query) and writing (command) of data into two different models. This separation allows for optimized performance, scalability, and security by handling read and write operations differently.
 
-![image](https://github.com/user-attachments/assets/8327310a-120f-407e-b268-69c476a90f85)
+![image](https://docs.aws.amazon.com/images/prescriptive-guidance/latest/modernization-data-persistence/images/cqrs.png)
 
 ### Key Components
 
